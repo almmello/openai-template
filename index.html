@@ -78,6 +78,14 @@ input[type="submit"]:focus{
   box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 600px) {
+    input[type="text"] {
+        font-size: 22px;
+    }
+    input[type="submit"] {
+        font-size: 18px;
+    }
+}
 
 #result_wrapper {
   text-align:center;
@@ -164,7 +172,7 @@ input[type="submit"]:focus{
 </head>
 <body>
   <form onsubmit="onSubmit(event)">
-    <h1>SloganCreator</h1>
+    <h1>GM SloganCreator</h1>
     <p>uses OpenAI - GTP3 and is powered by bohr.io</p>
     <input type="text" id="prompt" value="" placeholder="Goalmoon = meta + lua" />
     <input type="submit" value="Create Slogan" />
